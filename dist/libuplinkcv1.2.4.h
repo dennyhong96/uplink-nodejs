@@ -209,7 +209,7 @@ extern UplinkBucketIterator* uplink_list_buckets(UplinkProject* p0, UplinkListBu
 //
 // It returns false if the end of the iteration is reached and there are no more buckets, or if there is an error.
 
-extern _Bool uplink_bucket_iterator_next(UplinkBucketIterator* p0);
+extern bool uplink_bucket_iterator_next(UplinkBucketIterator* p0);
 
 // uplink_bucket_iterator_err returns error, if one happened during iteration.
 
@@ -301,7 +301,7 @@ extern UplinkObjectIterator* uplink_list_objects(UplinkProject* p0, uplink_const
 //
 // It returns false if the end of the iteration is reached and there are no more objects, or if there is an error.
 
-extern _Bool uplink_object_iterator_next(UplinkObjectIterator* p0);
+extern bool uplink_object_iterator_next(UplinkObjectIterator* p0);
 
 // uplink_object_iterator_err returns error, if one happened during iteration.
 
